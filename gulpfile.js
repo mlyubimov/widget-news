@@ -27,7 +27,7 @@ function styles() {
 	.pipe(sass())
 
 	// Конкотинация или соединение
-	.pipe(concat('style.min.css'))
+	// .pipe(concat('style.min.css'))
 
 	// Добавление префиксы
 	.pipe(autoprefixer({
