@@ -27,7 +27,7 @@ function styles() {
 	.pipe(sass())
 
 	// Конкотинация или соединение
-	// .pipe(concat('style.min.css'))
+	.pipe(concat('style.min.css'))
 
 	// Добавление префиксы
 	.pipe(autoprefixer({
@@ -59,14 +59,14 @@ function scripts() {
 	.pipe(concat('app.js'))
 
 	// Минификация JS
-	// .pipe(minify({
-	// 	ext:{
-	// 		// Добавить в конец файлов:
-	// 		min:'.min.js'
-	// 	},
-	// 	// Не копировать оригинальный файл
-	// 	noSource: true
-	// }))
+	.pipe(minify({
+		ext:{
+			// Добавить в конец файлов:
+			min:'.min.js'
+		},
+		// Не копировать оригинальный файл
+		noSource: true
+	}))
 
 	.pipe(sourcemaps.write("."))
 
