@@ -1,0 +1,179 @@
+.body {
+	align-items: flex-start;
+}
+
+.widget {
+	width: 100%;
+	padding: 20px;
+
+	&__list {
+		margin-bottom: 20px;
+		height: calc((160px * 3) + (20px * 2));
+	
+		&--min {
+			&-container {
+				padding: 20px;
+			}
+		}
+	}
+
+	&__item {
+		height: 160px;
+		margin-bottom: 20px;
+
+		&--min {
+			margin-bottom: 20px;
+			padding: 20px;
+		}
+	}
+
+	&__content {
+		&-container {
+			padding: 10px;
+			width: 60%;
+			min-height: 100%;
+		}
+	}
+
+	&__photo {
+		width: 40%;
+		min-height: 100%;
+
+		&::before {
+			padding: 5px 10px;
+			font-size: 12px;
+		}
+	}
+
+	&__title {
+		-webkit-line-clamp: 2;
+		font-size: 14px;
+		line-height: 1.3em;
+
+		&-container {
+			padding: 10px;
+			max-height: 95px;
+		}
+
+		&--min {
+			font-size: 14px;
+			margin-bottom: 20px;
+		}
+	}
+
+	&__author {
+		font-size: 10px;
+
+		&--min {
+			font-size: 10px;
+		}
+	}
+
+	&__date {
+		font-size: 10px;
+
+		&--min {
+			font-size: 10px;
+		}
+	}
+
+	&__footer {
+		&-container {
+			padding: 0;
+		}
+	}
+
+	&__link {
+		padding: 10px 50px;
+		font-size: 12px;
+
+		&--min {
+			padding: 10px 15px;
+			margin: 0;
+			font-size: 10px;
+		}
+	}
+
+	&__btn {
+		width: 100%;
+		min-height: 40px;
+		padding: 10px 0;
+
+		&--add {
+			flex: 1;
+			margin-right: 30px;
+		}
+
+		&--all {
+			width: 40px;
+
+			&-news-count {
+				width: 20px;
+				height: 20px;
+				font-size: 12px;
+			}
+
+			&::before {
+				width: 60%;
+				height: 4px;
+			}
+
+			&::after {
+				width: 60%;
+				height: 4px;
+			}
+		}
+
+		&-close--min {
+			bottom: 20px;
+			right: 20px;
+			width: 40px;
+
+			&::before {
+				width: 60%;
+				height: 4px;
+			}
+
+			&::after {
+				width: 60%;
+				height: 4px;
+			}
+		}
+	}
+}
+
+@media(max-height: 568px) {
+	.widget {
+		&__list {
+			height: calc(160px * 2 + 20px);
+		}
+	}
+}
+
+@media(orientation: landscape) and (max-height: 539px) {
+	.body {
+		align-items: center;
+	}
+
+	.widget {
+		&__list {
+			height: 160px;
+		}
+	}
+}
+
+@media(max-height: 823px) {
+	.body {
+		align-items: center;
+	}
+}
+
+@media(max-width: 280px) {
+	.widget {
+		&__photo {
+			&::before {
+				padding: 5px;
+			}
+		}
+	}
+}

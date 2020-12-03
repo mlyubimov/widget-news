@@ -14,6 +14,9 @@ const sass = require('gulp-sass');
 // Порядок подключения CSS
 const cssFiles = [
 	'./src/scss/style.scss',
+	'./src/scss/desktop.scss',
+	'./src/scss/tabled.scss',
+	'./src/scss/mobile.scss',
 	'./src/scss/widget.scss'
 ]
 
