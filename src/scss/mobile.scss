@@ -7,8 +7,8 @@
 	padding: 20px;
 
 	&__list {
-		margin-bottom: 20px;
 		height: calc((160px * 3) + (20px * 2));
+		margin-bottom: 20px;
 	
 		&--min {
 			&-container {
@@ -29,9 +29,9 @@
 
 	&__content {
 		&-container {
-			padding: 10px;
 			width: 60%;
 			min-height: 100%;
+			padding: 10px;
 		}
 	}
 
@@ -51,13 +51,13 @@
 		line-height: 1.3em;
 
 		&-container {
-			padding: 10px;
 			max-height: 95px;
+			padding: 10px;
 		}
 
 		&--min {
-			font-size: 14px;
 			margin-bottom: 20px;
+			font-size: 14px;
 		}
 	}
 
@@ -88,8 +88,8 @@
 		font-size: 12px;
 
 		&--min {
-			padding: 10px 15px;
 			margin: 0;
+			padding: 10px 15px;
 			font-size: 10px;
 		}
 	}

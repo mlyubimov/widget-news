@@ -2,8 +2,8 @@
 	width: 600px;
 
 	&__list {
-		margin-bottom: 20px;
 		height: calc((200px * 3) + (20px * 2));
+		margin-bottom: 20px;
 		
 		&--min {
 			&-container {
@@ -14,20 +14,20 @@
 	}
 
 	&__item {
-		margin-bottom: 20px;
 		height: 200px;
+		margin-bottom: 20px;
 
 		&--min {
-			padding: 20px;
 			margin-bottom: 20px;
+			padding: 20px;
 		}
 	}
 
 	&__content {
 		&-container {
-			padding: 10px;
 			width: 60%;
 			min-height: 100%;
+			padding: 10px;
 		}
 	}
 
@@ -47,8 +47,8 @@
 		line-height: 1.3em;
 
 		&-container {
-			padding: 20px 40px;
 			max-height: 95px;
+			padding: 20px 40px;
 		}
 
 		&--min {
@@ -84,15 +84,15 @@
 		font-size: 14px;
 
 		&--min {
-			padding: 10px 50px;
 			margin: 0;
+			padding: 10px 50px;
 		}
 	}
 
 	&__btn {
-		padding: 10px 0;
 		width: 100%;
 		min-height: 40px;
+		padding: 10px 0;
 
 		&--add {
 			flex: 1;
