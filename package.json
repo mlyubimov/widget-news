@@ -1,11 +1,11 @@
 {
   "name": "package",
   "version": "1.0.0",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "author": "Maxim Lubimov",
-  "license": "ISC",
+  "license": "MIT",
+  "scripts": {
+    "dev": "gulp dev"
+  },
   "devDependencies": {
     "@babel/core": "^7.12.9",
     "@babel/preset-env": "^7.12.7",
@@ -27,6 +27,7 @@
     "not dead"
   ],
   "dependencies": {
-    "del": "^5.1.0"
+    "del": "^5.1.0",
+    "gulp-json-minify": "^1.2.2"
   }
 }
