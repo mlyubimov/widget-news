@@ -147,7 +147,7 @@ gulp.task('watch', function(cb) {
 	// Следит за JSON файлами
 	gulp.watch('./src/storage/**/*.json', gulp.task('storage'))
 	// Следит за HTML файлами
-	gulp.watch("./dist/*.html").on('change', gulp.task('public'));
+	gulp.watch("./public/*.html").on('change', gulp.task('public'));
 });
 
 // Вызов сборщика
