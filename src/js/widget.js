@@ -39,7 +39,7 @@ const widget = {
 	shown: 0, //количество показанных новостей
 	data: [],
 	storage() { //хранилище новотсей
-		fetch('../storage/news.json')
+		fetch('https://mlyubimov.github.io/widget-news/storage/news.json')
 			.then(res => res.json())
 			.then(data => {
 				this.data = data; // добавление данных в data
